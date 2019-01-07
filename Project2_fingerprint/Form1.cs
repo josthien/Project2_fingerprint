@@ -63,7 +63,7 @@ namespace Project2_fingerprint
             try
             {
                 string fileName = string.Empty;
-                this.openFileDialog1.Filter = "Bitmap files | (*.bmp)";
+                this.openFileDialog1.Filter = "Bitmap files (*.bmp) | *.bmp";
                 this.openFileDialog1.FileName = string.Empty;
 
                 if (this.openFileDialog1.ShowDialog() != DialogResult.OK)
@@ -71,7 +71,7 @@ namespace Project2_fingerprint
                     return;
                 }
 
-                if (!Path.GetExtension(openFileDialog1.FileName).Equals("bmp"))
+                if (!Path.GetExtension(openFileDialog1.FileName).Equals(".bmp"))
                 {
                     MessageBox.Show("Please choose a bitmap file", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -103,6 +103,7 @@ namespace Project2_fingerprint
                 EventsInitialization();
 
                 this.txtDirectory.Text = dataLocation;
+                //this.txtDirectory.Text = string.Empty;
             }
             catch (Exception ex)
             {
