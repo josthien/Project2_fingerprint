@@ -78,7 +78,6 @@ namespace Project2_fingerprint
                 }
 
                 this.fingerprint = Image.FromFile(openFileDialog1.FileName);
-
                 
                 this.picFingerprint.Image = this.fingerprint;
                 this.picFingerprint.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -103,7 +102,7 @@ namespace Project2_fingerprint
                 EventsInitialization();
 
                 this.txtDirectory.Text = dataLocation;
-                //this.txtDirectory.Text = string.Empty;
+                this.txtDirectory.Text = string.Empty;
             }
             catch (Exception ex)
             {
