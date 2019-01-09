@@ -97,11 +97,7 @@ namespace Project2_fingerprint
         {
             try
             {
-                string dataLocation = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\samples";
-                
                 EventsInitialization();
-
-                this.txtDirectory.Text = dataLocation;
                 this.txtDirectory.Text = string.Empty;
             }
             catch (Exception ex)
