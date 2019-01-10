@@ -44,5 +44,6 @@ Below are the steps for using the application for fingerprint verification
 4. The application will create matchscore files inside each sub-directories in the database folder
 
 Below is the flowchart as to how this application works
+
 ![alt text](https://user-images.githubusercontent.com/35852207/50934068-762d1900-1435-11e9-9cbe-1baedc503651.PNG)
 ![alt text](https://user-images.githubusercontent.com/35852207/50934074-775e4600-1435-11e9-9848-268411507e18.PNG)
